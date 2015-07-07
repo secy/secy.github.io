@@ -4,7 +4,7 @@
       for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
     mixpanel.init("a9b0eb6fe69c92d153bdb682b146204b");</script><!-- end Mixpanel -->
     <script>
-      var QueryString=function(){for(var e={},i=window.location.search.substring(1),r=i.split("&"),a=0;a<r.length;a++){var t=r[a].split("=");if("undefined"==typeof e[t[0]])e[t[0]]=t[1];else if("string"==typeof e[t[0]]){var l=[e[t[0]],t[1]];e[t[0]]=l}else e[t[0]].push(t[1])}return e}(),user_email=QueryString.email;user_email&&(mixpanel.identify(user_email),mixpanel.people.set({$email:user_email,$created:new Date,$last_likes:new Date}));
+      var QueryString=function(){for(var e={},i=window.location.search.substring(1),r=i.split("&"),a=0;a<r.length;a++){var t=r[a].split("=");if("undefined"==typeof e[t[0]])e[t[0]]=t[1];else if("string"==typeof e[t[0]]){var l=[e[t[0]],t[1]];e[t[0]]=l}else e[t[0]].push(t[1])}return e}(),user_email=QueryString.email;user_name=QueryString.name;user_email&&(mixpanel.identify(user_email),mixpanel.people.set({$email:user_email,$name:user_name,$created:new Date,$last_likes:new Date}));
     </script>
   </head>
   <body>
